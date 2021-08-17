@@ -43,6 +43,8 @@ $(document).ready(function() {
     const word = $("#word").val();
     const wordCount = wordCounter(passage);
     const occurrencesOfWord = numberOfOccurrencesInText(word, passage);
-  })
-})
+    $("#totalCount").html(wordCount);
+    $("#selectedCount").html(occurrencesOfWord);
+  });
+});
 
